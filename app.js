@@ -1,4 +1,4 @@
-let pages = ["Dinosaur", "Elephant", "Penguin", "Giraffe", "Bear"];
+let pages = ["dinosaur", "elephant", "penguin", "giraffe", "bear"];
 
 function createCard() {
   const wrapper = document.getElementById("links");
@@ -8,7 +8,7 @@ function createCard() {
     a.href = "pages/" + pages[i].toLowerCase() + ".html";
     const div = document.createElement("div");
     div.classList.add("link");
-    div.innerText = pages[i];
+    div.innerText = pages[i].charAt(0).toUpperCase() + pages[i].slice(1);
 
     a.appendChild(div);
     wrapper.appendChild(a);
@@ -22,7 +22,7 @@ function redirect() {
 
   state = false;
   for (i in pages) {
-    if (animalName.value === pages[i]) {
+    if (animalName.value.toLowerCase() === pages[i]) {
       state = true;
       break;
     }
