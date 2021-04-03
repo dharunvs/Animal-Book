@@ -1,4 +1,22 @@
-let pages = ["dinosaur", "elephant", "penguin"];
+let pages = ["Dinosaur", "Elephant", "Penguin", "Giraffe", "Bear"];
+
+function createCard() {
+  const wrapper = document.getElementById("links");
+
+  for (i in pages) {
+    const a = document.createElement("a");
+    a.href = "pages/" + pages[i].toLowerCase() + ".html";
+    const div = document.createElement("div");
+    div.classList.add("link");
+    div.innerText = pages[i];
+
+    a.appendChild(div);
+    wrapper.appendChild(a);
+  }
+}
+
+createCard();
+
 function redirect() {
   const animalName = document.getElementById("animal");
 
