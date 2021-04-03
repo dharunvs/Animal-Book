@@ -78,3 +78,34 @@
   margin-right: 10px;
   color: red;
 }
+
+@media (max-width: 578px) {
+  .content header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+  }
+  .search > * {
+    margin-top: 20px;
+  }
+
+  .search input {
+    padding: 6px 10px;
+  }
+
+  .search button {
+    padding: 5px 10px;
+  }
+
+  .search #error {
+    min-height: 5px;
+    font-size: 1rem;
+  }
+  .content .links {
+    margin-top: 13vh;
+  }
+}

@@ -72,3 +72,10 @@ h3 {
 .sub-content h3 {
   margin: 10px 0;
 }
+
+@media (max-width: 578px) {
+  .img-container {
+    width: 200px;
+    height: 150px;
+  }
+}
