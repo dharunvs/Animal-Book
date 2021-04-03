@@ -31,7 +31,7 @@ function redirect() {
     }
   }
   if (state === "valid") {
-    location.href = "pages/" + animalName.value + ".html";
+    location.href = "pages/" + animalName.value.toLowerCase() + ".html";
   } else if (state === "empty") {
     animalName.value = "";
     error.innerText = "Enter something";

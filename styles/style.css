@@ -78,4 +78,15 @@ h3 {
     width: 200px;
     height: 150px;
   }
+  .content header {
+    font-size: 1.6rem;
+  }
+  .content {
+    margin: 20px auto;
+    width: 85%;
+  }
+
+  .content .sub-content p {
+    margin: 0;
+  }
 }
