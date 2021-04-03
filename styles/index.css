@@ -53,7 +53,13 @@
   justify-content: space-between;
 }
 
-.search button {
+.search div {
+  height: inherit;
+  align-items: center;
+  display: flex;
+}
+
+.search div button {
   height: inherit;
   padding: 0 15px;
   background-color: rgb(184, 222, 255);
@@ -65,7 +71,7 @@
   cursor: pointer;
 }
 
-.search input {
+.search div input {
   height: inherit;
   outline: none;
   border: none;
@@ -104,8 +110,14 @@
   .search #error {
     min-height: 5px;
     font-size: 1rem;
+    margin-bottom: 5px;
   }
   .content .links {
-    margin-top: 13vh;
+    margin-top: 8vh;
+  }
+
+  .content {
+    margin: 20px auto;
+    width: 85%;
   }
 }
