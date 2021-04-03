@@ -59,6 +59,9 @@ h3 {
   cursor: pointer;
 }
 
+.link {
+  margin-top: 10px;
+}
 .link a {
   color: darkmagenta;
 }
