@@ -19,17 +19,24 @@ createCard();
 
 function redirect() {
   const animalName = document.getElementById("animal");
+  const error = document.getElementById("error");
 
   state = false;
   for (i in pages) {
     if (animalName.value.toLowerCase() === pages[i]) {
-      state = true;
+      state = "valid";
       break;
+    } else if (animalName.value.trim() === "") {
+      state = "empty";
     }
   }
-  if (state) {
+  if (state === "valid") {
     location.href = "pages/" + animalName.value + ".html";
+  } else if (state === "empty") {
+    animalName.value = "";
+    error.innerText = "Enter something";
   } else {
     animalName.value = "";
+    error.innerText = "Not Found";
   }
 }
